@@ -13,11 +13,12 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 //middleware for handling cors policy
-app.use(cors({
+app.use(cors());
+/*app.use(cors({
     origin: 'http://localhost:3000',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
-}));
+}));*/
 
 
 
